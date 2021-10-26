@@ -38,8 +38,3 @@ for photo in all_photo:
 
 
 
-print(os.path.getmtime('/home/laim/Downloads/sample_photo/24_09_2021_DJI_P4V2_OBJ_f001_0001.JPG'))
-print(os.path.getmtime('/home/laim/Downloads/sample_photo/24_09_2021_DJI_P4V2_OBJ_f001_0002.JPG'))
-print(time.gmtime(os.path.getmtime('/home/laim/Downloads/sample_photo/24_09_2021_DJI_P4V2_OBJ_f001_0001.JPG')))
-#os.popen('/home/laim/Downloads/sample_photo/24_09_2021_DJI_P4V2_OBJ_f001_0001.JPG /home/laim/Downloads/fg.JPG')
-# shutil.copy('/home/laim/Downloads/sample_photo/24_09_2021_DJI_P4V2_OBJ_f001_0001.JPG', '/home/laim/Downloads/fg.JPG')
