@@ -10,11 +10,6 @@ all_photo = sorted(listdir(file_path))
 first_folder = 1
 photo_previos = ''
 count=1
-# перейти в папку и выбрать следующий файл
-# создать папку, если время между последним файлом и настоящим отличается на минуту, иначе
-# скопировать файл в эту папку
-# os.chdir(path_folders)
-# os.mkdir(str(first_folder))
 
 for photo in all_photo:
     photo_presnt=photo
