@@ -6,14 +6,28 @@ import sys
 from PyQt5 import QtWidgets
 from FotoScript import *
 from PyQt5.QtWidgets import QMessageBox
-
+import statistics
 
 
 def move():
     all_photo = sorted(listdir(file_path))
     count=1
+    all_count_photo = []
     first_folder = 1
     photo_previos = ''
+    photo_count_pr=''
+    photo_count_pesent=''
+
+    for photo in all_photo:
+        photo_count_pesent=photo
+        if photo_count_pr=='':
+            pass
+        else:
+            all_count_photo.append(os.path.getmtime(str(file_path)+'/'+str(photo_count_pesent))-os.path.getmtime(str(file_path)+'/'+str(photo_count_pr)))
+        photo_count_pr = photo_count_pesent
+    time=int(statistics.mode(all_count_photo)*3)
+
+    print(time)
     for photo in all_photo:
         photo_presnt=photo
 
@@ -23,7 +37,7 @@ def move():
             os.chdir(str(first_folder))
             shutil.copy(str(file_path)+'/'+str(photo_presnt),str(photo_presnt))
 
-        elif os.path.getmtime(str(file_path)+'/'+str(photo_presnt))-os.path.getmtime(str(file_path)+'/'+str(photo_previos))<=10 :
+        elif os.path.getmtime(str(file_path)+'/'+str(photo_presnt))-os.path.getmtime(str(file_path)+'/'+str(photo_previos))<=time :
             shutil.copy(str(file_path) + '/' + str(photo_presnt),  str(photo_presnt))
 
         else:
