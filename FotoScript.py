@@ -13,8 +13,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(615, 452)
+        MainWindow.setObjectName("Foto Script")
+        MainWindow.resize(685, 491)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setStyleSheet("QWidget{\n"
 "    \n"
@@ -28,7 +28,7 @@ class Ui_MainWindow(object):
 "}")
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(250, 290, 121, 51))
+        self.pushButton.setGeometry(QtCore.QRect(270, 300, 121, 51))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(10)
@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.pushButton.setAutoRepeat(False)
         self.pushButton.setObjectName("pushButton")
         self.textBrowser_folder = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser_folder.setGeometry(QtCore.QRect(140, 30, 361, 41))
+        self.textBrowser_folder.setGeometry(QtCore.QRect(160, 40, 361, 41))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
@@ -57,7 +57,7 @@ class Ui_MainWindow(object):
 "}")
         self.textBrowser_folder.setObjectName("textBrowser_folder")
         self.plainTextEdit_folder = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plainTextEdit_folder.setGeometry(QtCore.QRect(140, 70, 321, 31))
+        self.plainTextEdit_folder.setGeometry(QtCore.QRect(160, 80, 321, 31))
         self.plainTextEdit_folder.setStyleSheet("QPlainTextEdit{\n"
 "    \n"
 "    background-color: rgb(255, 255, 255);\n"
@@ -65,14 +65,14 @@ class Ui_MainWindow(object):
 "}")
         self.plainTextEdit_folder.setObjectName("plainTextEdit_folder")
         self.pushButton_folder = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_folder.setGeometry(QtCore.QRect(480, 70, 31, 31))
+        self.pushButton_folder.setGeometry(QtCore.QRect(500, 80, 31, 31))
         self.pushButton_folder.setStyleSheet("QPushButton{\n"
 "    background-color: rgb(0,112,186);\n"
 "    border-radius: 10px;\n"
 "}")
         self.pushButton_folder.setObjectName("pushButton_folder")
         self.textBrowser_folder_2 = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser_folder_2.setGeometry(QtCore.QRect(140, 150, 361, 41))
+        self.textBrowser_folder_2.setGeometry(QtCore.QRect(160, 160, 361, 41))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
@@ -86,7 +86,7 @@ class Ui_MainWindow(object):
 "}")
         self.textBrowser_folder_2.setObjectName("textBrowser_folder_2")
         self.plainTextEdit_folder_2 = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plainTextEdit_folder_2.setGeometry(QtCore.QRect(140, 200, 321, 31))
+        self.plainTextEdit_folder_2.setGeometry(QtCore.QRect(160, 210, 321, 31))
         self.plainTextEdit_folder_2.setStyleSheet("QPlainTextEdit{\n"
 "    \n"
 "    background-color: rgb(255, 255, 255);\n"
@@ -94,15 +94,21 @@ class Ui_MainWindow(object):
 "}")
         self.plainTextEdit_folder_2.setObjectName("plainTextEdit_folder_2")
         self.pushButton_folder_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_folder_2.setGeometry(QtCore.QRect(480, 200, 31, 31))
+        self.pushButton_folder_2.setGeometry(QtCore.QRect(500, 210, 31, 31))
         self.pushButton_folder_2.setStyleSheet("QPushButton{\n"
 "    background-color: rgb(0,112,186);\n"
 "    border-radius: 10px;\n"
 "}")
         self.pushButton_folder_2.setObjectName("pushButton_folder_2")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(430, 350, 211, 61))
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap(":/logo.png"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setObjectName("label_2")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 615, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 685, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -114,17 +120,18 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", "Запустить"))
+        MainWindow.setWindowTitle(_translate("Foto Script", "Foto Script"))
+        self.pushButton.setText(_translate("Foto Script", "Запустить"))
         self.textBrowser_folder.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Arial\'; font-size:10pt; font-weight:600; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:12pt; font-weight:400;\">Выберите папку с фотографиями</span></p></body></html>"))
-        self.pushButton_folder.setText(_translate("MainWindow", "..."))
-        self.textBrowser_folder_2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.pushButton_folder.setText(_translate("Foto Script", "..."))
+        self.textBrowser_folder_2.setHtml(_translate("Foto Script", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Arial\'; font-size:10pt; font-weight:600; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:12pt; font-weight:400;\">Выберите папку для размещения</span></p></body></html>"))
-        self.pushButton_folder_2.setText(_translate("MainWindow", "..."))
+        self.pushButton_folder_2.setText(_translate("Foto Script", "..."))
+import img_rc
